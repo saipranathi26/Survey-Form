@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><style type="text/css">h1,p
+{
+  text-align:center;
+}
+body{
+  background-color: #c1d1f9;
+  color: black;
+  margin: 0;
+  width: 100%;
+}
+form {
+  width: 90vw;
+  max-width: 600px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin: 0.65rem 0;
+}
+input[type="submit"]{
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color:white;
+  border-color: black;
+}
+input[type="number"]
+{
+  width:32%;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+.master-div-style {
+  margin: auto;
+  width: 400px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 20px 10px 10px 10px;
+}
+.fields {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+</style>
+
+  
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+    <div class="master-div-style">
+    <fieldset>
+      <label id="name-label">Name: <input id="name" required="" type="text" placeholder="Enter your Name"></label>
+      <label id="email-label">Email: <input id="email" required="" type="email" placeholder="Enter your Email"></label>
+      <label id="number-label">Age(Optional):  <input id="number" type="number" min="14" max="120" placeholder="Enter your Age"></label>
+      <label> Which option best describes your current role?
+      <select id="dropdown">
+        <option>Select Current Role</option>
+        <option>student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Other</option>&gt;
+      </select>
+      <label>Would you recommend ABC to a friend?</label>
+      <label><input value="1" name="recommend" type="radio">Yes</label>
+      <label><input value="2" name="recommend" type="radio">No</label>
+      <label><input value="3" name="recommend" type="radio">Maybe</label>
+      <label>What is your favorite feature of ABC?(Check all that apply)</label>
+      <label><input value="a" type="Checkbox">Front-end Projects</label>
+      <label><input value="b" type="Checkbox">Back-end Projects</label>
+      <label><input value="c" type="Checkbox">Data Visualization</label>
+      <label><input value="d" type="Checkbox">Additional Courses</label>
+      <label>Any comments or suggestions?<textarea class="fields" name="bio" placeholder="Enter your comments here..."></textarea> </label>
+    </label></fieldset>
+    <label><input id="submit" type="submit"></label>
+    </div>
+  
+<script>// Write JavaScript here </script></form></body>
